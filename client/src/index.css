@@ -1,0 +1,50 @@
+@media only screen and (min-width:768px){
+    
+    .box-shadow{
+        width: 41.66%;
+    }
+    [class*="box-"]{
+        width: 26%;
+        margin: 30px 5px 0px 5px;
+    }
+
+    .comment-box{
+        width: 26%;
+        margin: 30px 5px 0px 5px;
+    }
+    [class*="button-"]{
+        outline: none;
+        padding: 5px;
+        width: 50%;
+        border: none;
+        border-radius: 20px;
+        margin: 5px;
+        font-size: larger;
+    }
+    .section-body{
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        width: 95%;
+    }
+    .section-container{
+        margin: auto;
+        width: 50%;
+    }
+    .testiomonys{
+        width: 95%;
+        margin: auto;
+        display: flex;
+        overflow: scroll;
+    }
+    
+   
+    
+    .section-container-footer{
+        margin: auto;
+        width: 50%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+}
