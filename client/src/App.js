@@ -74,12 +74,12 @@ class App extends Component {
       <Router>
         <div className="App">
           <Header/>
-            <div className="">
+            <div className="sit-main-css">
               <Switch>
                 <Route exact path="/" component={ Homedoc } />
                 <Route exact path="/register" component={ Register } />
                 <Route exact path="/login" component={Login} />
-                <PrivateRoute exact path="/" component={ Landing } />
+                <PrivateRoute exact path="/home" component={ Landing } />
                 <PrivateRoute exact path="/detail/:coin" component={Details} />
                 <PrivateRoute exact path="/trade" component={Trade} />
                 <PrivateRoute exact path="/invest" component={Invest} />
