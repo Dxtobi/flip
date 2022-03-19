@@ -20,6 +20,10 @@
     "url": "https://github.com/acervantest/node-api/issues"
   },
   "homepage": "https://github.com/acervantest/node-api#readme",
+  "engines": {
+    "node": "16.13.1",
+    "npm": "8.1.2"
+  },
   "dependencies": {
     "@material-ui/core": "^4.3.1",
     "bcryptjs": "^2.4.3",
