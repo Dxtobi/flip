@@ -7,6 +7,9 @@
     "client-install": "npm install --prefix client",
     "start": "node server.js",
     "server": "nodemon server.js",
+    "build":"cd client && npm run build",
+    "install-client":"cd client && npm install",
+    "heroku-postbuild":"npm run install-client && npm run build",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
@@ -29,6 +32,8 @@
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.18.2",
     "concurrently": "^3.5.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
     "express": "^4.16.3",
     "jsonwebtoken": "^8.2.1",
     "moment": "^2.22.1",
