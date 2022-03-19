@@ -56,7 +56,7 @@ class Homedoc extends React.Component {
                             </div>
                             <div className='dle-box'>
                                 <SiBitcoin className='bx-icon'/>
-                            <div className='bx-tx'>Fast Service Response Time</div>
+                            <div className='bx-tx'>Direct Crypto Payment system</div>
 
                                 
                             </div>

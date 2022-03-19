@@ -13,17 +13,17 @@ class Header extends Component {
     render() {
         return (
             <header className="header">
-                <div className={`side-bar ${this.state.showSide ? 'open-menu' : ''}`}>
+               {/* <div className={`side-bar ${this.state.showSide ? 'open-menu' : ''}`}>
                     <div className='side-bar-item'>Buy</div>
                     <div className='side-bar-item'>Sell</div>
                     <div className='side-bar-item'>Profile</div>
                     <div className='side-bar-item'>T&C</div>
                     <div  onClick={this.toggleBar} className='side-bar-item'>Close</div>
-                </div>
+                </div>*/}
                     <Link to='/'>
                         <h1 className="brand-name">Fliptrade</h1>
                     </Link>
-                <div onClick={this.toggleBar}><AiOutlineMenu size={ 25 }/></div>
+              { /* <div onClick={this.toggleBar}><AiOutlineMenu size={ 25 }/></div>*/}
              
             </header>
         );
