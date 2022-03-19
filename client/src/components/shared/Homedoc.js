@@ -22,7 +22,7 @@ class Homedoc extends React.Component {
                         <small>A cryptocurrency investment platform</small>
                         <div className='login-div'>
                             <Link to="/REGISTER" className="create-account-btn">CREATE AN ACCOUNT</Link>
-                            <small className='litle-info'>We Take no commission</small>
+                            <small className='litle-info'>We Take no commissions</small>
                         </div>
                         <h2 className="headers-h2">Earn <div className='green-text'>Minimum Of 15%</div> With Us.</h2>
 
@@ -70,20 +70,20 @@ class Homedoc extends React.Component {
                             <div className='dle-box-pl'>
                                 <SiReverbnation className='bx-icon'/>
                                 <h3>SILVER</h3>
-                                <div>Get back 15% of your investment (40days), Deposit should be up to 0.0005BTC</div>
+                                <div>Get back 15% of your investment <br/> Duration: (40days) <br/> Minimum Deposit: 0.0005BTC</div>
                             </div>
 
                             <div className='dle-box-pl'>
                                 <SiGoldenline className='bx-icon'/>
                                 <h3>GOLD</h3>
-                                <div>Get back 25% of your investment (40days), Deposit should be up to 0.005BTC</div>
+                                <div>Get back 25% of your investment <br/> Duration: (40days) <br/> Minimum Deposit: 0.005BTC</div>
 
                                
                             </div>
                             <div className='dle-box-pl'>
                                 <SiGooglenearby className='bx-icon'/>
                                 <h3>DIAMOND</h3>
-                                <div>Get back 50% of your investment (30days), Deposit should be up to 0.05BTC</div>
+                                <div>Get back 50% of your investment <br/> Duration: (30days) <br/> Minimum Deposit: 0.05BTC</div>
                                 
                             </div>
                     </div>
