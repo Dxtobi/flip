@@ -104,7 +104,7 @@ class Invest extends React.Component {
                             <h3>SILVER: 15%</h3>
                             <small><b>Current Interest:</b> 0</small>
                         </div>
-                        <small>Get back 15% of your investment, Deposit should be up to 0.0005BTC</small>
+                        <small>Get back 15% of your investment (40days), Deposit should be up to 0.0005BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />
@@ -129,7 +129,7 @@ class Invest extends React.Component {
                             <h3>GOLD: 25%</h3>
                             <small><b>Current Interest:</b> 0</small>
                         </div>
-                        <small>Get back 25% of your investment, Deposit should be up to 0.005BTC</small>
+                        <small>Get back 25% of your investment (40days), Deposit should be up to 0.005BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />
@@ -154,7 +154,7 @@ class Invest extends React.Component {
                             <h3>DIAMOND: 50%</h3>
                             <small><b>Current Interest:</b> 0</small>
                         </div>
-                        <small>Get back 50% of your investment, Deposit should be up to 0.05BTC</small>
+                        <small>Get back 50% of your investment (30days), Deposit should be up to 0.05BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />

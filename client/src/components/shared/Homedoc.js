@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
-
+import { SiLetsencrypt, SiAcclaim, SiBitcoin, SiReverbnation, SiGoldenline, SiGooglenearby } from "react-icons/si";
 class Homedoc extends React.Component {
 
     componentDidMount() {
@@ -36,6 +36,56 @@ class Homedoc extends React.Component {
                                 <div>3000+</div>
                             </div>
                         </div>
+                    </div>
+                    </section>
+                    <section className='section-1-middle'>
+                        <div className='section-1-top-div'>
+                            <br/> <br/> <br/>
+                        <h3>With Us</h3>
+                        
+                            <div className='dle-box'>
+                                <SiLetsencrypt className='bx-icon'/>
+                                <div className='bx-tx'>Simple but Secure</div>
+                            </div>
+
+                            <div className='dle-box'>
+                                <SiAcclaim className='bx-icon'/>
+                            <div className='bx-tx'>Fast Service Response Time</div>
+
+                               
+                            </div>
+                            <div className='dle-box'>
+                                <SiBitcoin className='bx-icon'/>
+                            <div className='bx-tx'>Fast Service Response Time</div>
+
+                                
+                            </div>
+                    </div>
+                    </section>
+                    <section className='section-1-last'>
+                        <div className='section-1-top-div'>
+                            <br/> <br/> <br/>
+                        <h2>Plans</h2>
+                        
+                            <div className='dle-box-pl'>
+                                <SiReverbnation className='bx-icon'/>
+                                <h3>SILVER</h3>
+                                <div>Get back 15% of your investment (40days), Deposit should be up to 0.0005BTC</div>
+                            </div>
+
+                            <div className='dle-box-pl'>
+                                <SiGoldenline className='bx-icon'/>
+                                <h3>GOLD</h3>
+                                <div>Get back 25% of your investment (40days), Deposit should be up to 0.005BTC</div>
+
+                               
+                            </div>
+                            <div className='dle-box-pl'>
+                                <SiGooglenearby className='bx-icon'/>
+                                <h3>DIAMOND</h3>
+                                <div>Get back 50% of your investment (30days), Deposit should be up to 0.05BTC</div>
+                                
+                            </div>
                     </div>
                 </section>
             </div>

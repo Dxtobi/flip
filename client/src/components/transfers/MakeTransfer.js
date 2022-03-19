@@ -134,6 +134,8 @@ class MakeTransfer extends React.Component {
                         <BiTransfer size={25}/>
                     </div>
                     <button  className="trade_btn green-border" onClick={() => this.setState({ pick1: !this.state.pick1, pick:false })}>{this.state.picked1}</button>
+
+
                </div>
             </div>
         );
