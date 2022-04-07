@@ -16,13 +16,15 @@ class Homedoc extends React.Component {
             <div className='home-page-landing'>
                 <div className={`container my-container`}>
                 <section className='section-1-top'>
-                    <div  className='section-1-top-div'>
+                        <div className='section-1-top-div'>
+                            <div className='image-header-div'>
+                            <img src="/imb2.jpg" alt="d" className='img-header-home'/> </div>
                         <h2 className="headers-h2">Easy Interface.<br/>Easy Profit.<br/> Easy Steps.
                         </h2>
                         <small>A cryptocurrency investment platform</small>
                         <div className='login-div'>
                             <Link to="/REGISTER" className="create-account-btn">CREATE AN ACCOUNT</Link>
-                            <small className='litle-info'>We Take no commissions</small>
+                            <small className='litle-info'>We Take Almost No Commissions</small>
                         </div>
                         <h2 className="headers-h2">Earn <div className='green-text'>Minimum Of 15%</div> With Us.</h2>
 
@@ -58,7 +60,6 @@ class Homedoc extends React.Component {
                                 <SiBitcoin className='bx-icon'/>
                             <div className='bx-tx'>Direct Crypto Payment system</div>
 
-                                
                             </div>
                     </div>
                     </section>
@@ -66,25 +67,33 @@ class Homedoc extends React.Component {
                         <div className='section-1-top-div'>
                             <br/> <br/> <br/>
                         <h2>Plans</h2>
-                        
                             <div className='dle-box-pl'>
                                 <SiReverbnation className='bx-icon'/>
                                 <h3>SILVER</h3>
-                                <div>Get back 15% of your investment <br/> Duration: (40days) <br/> Minimum Deposit: 0.0005BTC</div>
+                                <div className='skipper__'>
+                                    <div className='dle-boxi-pl-i'>Get back 10% of your investment daily </div>
+                                    <div className='dle-boxi-pl-i'>Duration: (14days)</div>
+                                    <div className='dle-boxi-pl-i'>Minimum Deposit: 0.0005BTC</div>
+                                </div>
                             </div>
-
                             <div className='dle-box-pl'>
                                 <SiGoldenline className='bx-icon'/>
                                 <h3>GOLD</h3>
-                                <div>Get back 25% of your investment <br/> Duration: (40days) <br/> Minimum Deposit: 0.005BTC</div>
-
-                               
+                                <div className='skipper__'>
+                                    <div className='dle-boxi-pl-i'>Get back 25% of your investment daily</div>
+                                    <div className='dle-boxi-pl-i'>Duration: (14days)</div>
+                                    <div className='dle-boxi-pl-i'>Minimum Deposit: 0.005BTC</div>
+                                </div>
                             </div>
                             <div className='dle-box-pl'>
                                 <SiGooglenearby className='bx-icon'/>
                                 <h3>DIAMOND</h3>
-                                <div>Get back 50% of your investment <br/> Duration: (30days) <br/> Minimum Deposit: 0.05BTC</div>
-                                
+                                <div className='skipper__'>
+                                    <div className='dle-boxi-pl-i'>Get back 50% of your investment daily</div>
+                                    <div className='dle-boxi-pl-i'>Duration: (21days) </div>
+                                    <div className='dle-boxi-pl-i'>Minimum Deposit: 0.05BTC </div>
+                                 </div>
+
                             </div>
                     </div>
                 </section>

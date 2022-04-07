@@ -13,7 +13,9 @@ class Invest extends React.Component {
             'bc1qzg6mp7lec4f2p77xnmjkdkjf4jj9fj85rky2mp',
             'bc1qmk736vnfrwz6pjkwksrhhf4mphrrtgzrgxcjfb',
         ],
-        showTost:false
+        showTost: false,
+        traId: "",
+        errorb:false,
      };
 
 
@@ -49,18 +51,33 @@ class Invest extends React.Component {
     }
 
     displayCryptoWallet = () => {
+
         setTimeout(() => {
             this.setState({showWalletId:!this.state.showWalletId})
         }, 1000);
         
     }
     displayCryptoWalletSent = () => {
-        setTimeout(() => {
-            this.setState({showSent:!this.state.showSent, showWalletId:false,  })
-            //this.setState({showSent:!this.state.showSent, showWalletId:false })
-        }, 1000);
-       
+      
+            setTimeout(() => {
+                this.setState({showSent:!this.state.showSent, showWalletId:false,  })
+                //this.setState({showSent:!this.state.showSent, showWalletId:false })
+            }, 1000);
     }
+
+    displayCryptoWalletSentTrans = () => {
+      
+        if (this.state.traId.length>10) {
+            setTimeout(() => {
+                this.setState({showSent:false, showWalletId:false, showTost:true  })
+                //this.setState({showSent:!this.state.showSent, showWalletId:false })
+            }, 1000);
+        } else {
+            this.setState({ errorb: true })
+       }
+}
+
+    //displayCryptoWalletSentTrans
     render() {
         const btc = Math.floor(Math.random() * this.state.btcAdd.length);
         return (
@@ -79,7 +96,7 @@ class Invest extends React.Component {
                     {
                         this.state.showTost && (
                             <div className="alert_box green-border">
-                                <div>Confirming you would receive an email shortly </div>
+                                <div>Confirming... you would receive an email shortly </div>
                                 <FiDelete onClick={() => this.setState({showTost:false})}/>
                             </div>
                         )
@@ -89,22 +106,21 @@ class Invest extends React.Component {
                             <div className="btc-inv-model">
                                 <button className="inv-btn" style={{ width: '40%' }} onClick={()=>this.displayCryptoWalletSent()}>close</button>
                                 <small>Send btc to your Interest WalletID</small>
-                                <input className="btc-inv-input" placeholder="Enter Transaction id to confirm"/>
+                                <input onChange={(e)=>this.setState({traId:e.target.value})} className={`btc-inv-input-${this.state.errorb}`} value={ this.state.traId} placeholder="Enter Transaction id to confirm"/>
                                 <button className="inv-btn" style={{ width: '80%' }} onClick={() => {
-                                    this.displayCryptoWalletSent()
-                                    this.setState({showTost:true})
+                                    this.displayCryptoWalletSentTrans()
+                                 
                                 }}>Confirm</button>
-                               
                             </div>
                         )
                     }
                     <section className="inv-sectn">
                         
                         <div className='inv-sectn-top'>
-                            <h3>SILVER: 15%</h3>
-                            <small><b>Current Interest:</b> 0</small>
+                            <h3>SILVER: 10%</h3>
+                            
                         </div>
-                        <small>Get back 15% of your investment (40days), Deposit should be up to 0.0005BTC</small>
+                        <small>Get back 10% of your investment daily  (14days), Deposit should be up to 0.0005BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />
@@ -126,10 +142,10 @@ class Invest extends React.Component {
                     </section>
                     <section className="inv-sectn">
                     <div className='inv-sectn-top'>
-                            <h3>GOLD: 25%</h3>
-                            <small><b>Current Interest:</b> 0</small>
+                            <h3>GOLD: 10%</h3>
+                            
                         </div>
-                        <small>Get back 25% of your investment (40days), Deposit should be up to 0.005BTC</small>
+                        <small>Get back 10% of your investment daily (14days), Deposit should be up to 0.005BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />
@@ -152,9 +168,9 @@ class Invest extends React.Component {
                     <section className="inv-sectn">
                     <div className='inv-sectn-top'>
                             <h3>DIAMOND: 50%</h3>
-                            <small><b>Current Interest:</b> 0</small>
+                           
                         </div>
-                        <small>Get back 50% of your investment (30days), Deposit should be up to 0.05BTC</small>
+                        <small>Get back 50% of your investment daily (21days), Deposit should be up to 0.05BTC</small>
                         <div className="invest-div">
                             <div className="inv-box" >
                                                 <SiBitcoin size={45} />
